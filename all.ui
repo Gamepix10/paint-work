@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_right">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>40</y>
+      <width>31</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_left">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>31</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="photo">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>30</y>
+      <width>681</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>870</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionReliz"/>
+    <addaction name="btn_browse"/>
+    <addaction name="actionExit_2"/>
+   </widget>
+   <widget class="QMenu" name="menuBrush_Size">
+    <property name="title">
+     <string>Pen</string>
+    </property>
+    <addaction name="action3px"/>
+    <addaction name="action5px"/>
+    <addaction name="action7px"/>
+    <addaction name="action9px"/>
+   </widget>
+   <widget class="QMenu" name="menuInstruments">
+    <property name="title">
+     <string>Eraser</string>
+    </property>
+    <addaction name="action3px_2"/>
+    <addaction name="action5px_2"/>
+    <addaction name="action7px_2"/>
+    <addaction name="action9px_2"/>
+    <addaction name="action11px"/>
+    <addaction name="action15px"/>
+   </widget>
+   <widget class="QMenu" name="menuBrush_Color">
+    <property name="title">
+     <string>Цвет кисти</string>
+    </property>
+    <addaction name="actionOpen_Pallete"/>
+   </widget>
+   <widget class="QMenu" name="menuFiltr">
+    <property name="title">
+     <string>Фильтры</string>
+    </property>
+    <addaction name="actionBlack_White"/>
+    <addaction name="actionShum"/>
+    <addaction name="actionYarkost"/>
+    <addaction name="actionNegtive"/>
+    <addaction name="actionSepia"/>
+    <addaction name="actionOttenki_Serogo"/>
+   </widget>
+   <widget class="QMenu" name="menuOperation">
+    <property name="title">
+     <string>Операции</string>
+    </property>
+    <addaction name="actionSlojenie"/>
+    <addaction name="actionVichitanie"/>
+    <addaction name="actionDelenie"/>
+    <addaction name="actionUmnojenia"/>
+    <addaction name="actionSet_Text"/>
+    <addaction name="actionWorkwithShum"/>
+   </widget>
+   <widget class="QMenu" name="menuMore_Operation">
+    <property name="title">
+     <string>Дополнительные операции</string>
+    </property>
+    <addaction name="actionCareliatia_Svertka"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuBrush_Size"/>
+   <addaction name="menuInstruments"/>
+   <addaction name="menuBrush_Color"/>
+   <addaction name="menuFiltr"/>
+   <addaction name="menuOperation"/>
+   <addaction name="menuMore_Operation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSave">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Очистить</string>
+   </property>
+  </action>
+  <action name="actionBlack_White">
+   <property name="text">
+    <string>Черно-белый</string>
+   </property>
+  </action>
+  <action name="actionShum">
+   <property name="text">
+    <string>Шумы</string>
+   </property>
+  </action>
+  <action name="actionYarkost">
+   <property name="text">
+    <string>Яркость</string>
+   </property>
+  </action>
+  <action name="actionNegtive">
+   <property name="text">
+    <string>Негатив</string>
+   </property>
+  </action>
+  <action name="actionSepia">
+   <property name="text">
+    <string>Сепия</string>
+   </property>
+  </action>
+  <action name="actionOttenki_Serogo">
+   <property name="text">
+    <string>Оттенки серого</string>
+   </property>
+  </action>
+  <action name="action3px">
+   <property name="text">
+    <string>3px</string>
+   </property>
+  </action>
+  <action name="action5px">
+   <property name="text">
+    <string>5px</string>
+   </property>
+  </action>
+  <action name="action7px">
+   <property name="text">
+    <string>7px</string>
+   </property>
+  </action>
+  <action name="action9px">
+   <property name="text">
+    <string>9px</string>
+   </property>
+  </action>
+  <action name="action3px_2">
+   <property name="text">
+    <string>3px</string>
+   </property>
+  </action>
+  <action name="action5px_2">
+   <property name="text">
+    <string>5px</string>
+   </property>
+  </action>
+  <action name="action7px_2">
+   <property name="text">
+    <string>7px</string>
+   </property>
+  </action>
+  <action name="action9px_2">
+   <property name="text">
+    <string>9px</string>
+   </property>
+  </action>
+  <action name="action11px">
+   <property name="text">
+    <string>11px</string>
+   </property>
+  </action>
+  <action name="action15px">
+   <property name="text">
+    <string>15px</string>
+   </property>
+  </action>
+  <action name="actionOpen_Pallete">
+   <property name="text">
+    <string>Open Pallete</string>
+   </property>
+  </action>
+  <action name="actionSlojenie">
+   <property name="text">
+    <string>Сложение</string>
+   </property>
+  </action>
+  <action name="actionVichitanie">
+   <property name="text">
+    <string>Вычитание</string>
+   </property>
+  </action>
+  <action name="actionDelenie">
+   <property name="text">
+    <string>Деление</string>
+   </property>
+  </action>
+  <action name="actionUmnojenia">
+   <property name="text">
+    <string>Умножение</string>
+   </property>
+  </action>
+  <action name="actionSet_Text">
+   <property name="text">
+    <string>Добавление надписи</string>
+   </property>
+  </action>
+  <action name="actionReliz">
+   <property name="text">
+    <string>Распознать</string>
+   </property>
+  </action>
+  <action name="actionCareliatia_Svertka">
+   <property name="text">
+    <string>Кареляция\Свертка</string>
+   </property>
+  </action>
+  <action name="btn_browse">
+   <property name="text">
+    <string>Выбор папки</string>
+   </property>
+  </action>
+  <action name="actionWorkwithShum">
+   <property name="text">
+    <string>Работа с шумами</string>
+   </property>
+  </action>
+  <action name="actionExit_2">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
